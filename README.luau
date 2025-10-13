@@ -1,3 +1,5 @@
+-- Get the library // Use first one if your using for studio and second for others.
+
 local library = require(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/Micro-Lua/Library/refs/heads/main/Main.luau")) or loadstring(game:HttpGet("https://raw.githubusercontent.com/Micro-Lua/Library/refs/heads/main/Main.luau"))
 
 local gui = library.Create -- Creates the interface whatever
