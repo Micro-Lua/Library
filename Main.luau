@@ -1055,20 +1055,20 @@ Interface["60"]["Position"] = UDim2.new(0.41947, 0, 0.5, 0);
 
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.LocalScript
 local function C_2()
-local script = Interface["2"];
+	local script = Interface["2"];
 	local a=game:GetService("TweenService")local b=script.Parent.Holder;local c=script.Parent.Minimized;local d=b.TitleHolder.OptionsHolder.MinimizeButton;local e=c.MinimizeButton;local f=TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out)local g={}local function h(i)g[i]={}local j=g[i]if i:IsA("Frame")or i:IsA("ImageLabel")or i:IsA("ImageButton")then j.BackgroundTransparency=i.BackgroundTransparency end;if i:IsA("TextLabel")or i:IsA("TextButton")then j.TextTransparency=i.TextTransparency;j.BackgroundTransparency=i.BackgroundTransparency end;if i:IsA("ImageLabel")or i:IsA("ImageButton")then j.ImageTransparency=i.ImageTransparency end;for k,l in ipairs(i:GetChildren())do if l:IsA("UIStroke")then j[l]=l.Transparency end end;for k,m in ipairs(i:GetChildren())do h(m)end end;local function n(i,o)local p={}local function q(r)local s=g[r]if s then local t={}if r:IsA("Frame")or r:IsA("ImageLabel")or r:IsA("ImageButton")then t.BackgroundTransparency=o end;if r:IsA("TextLabel")or r:IsA("TextButton")then t.TextTransparency=o;t.BackgroundTransparency=o end;if r:IsA("ImageLabel")or r:IsA("ImageButton")then t.ImageTransparency=o end;table.insert(p,a:Create(r,f,t))for m,u in pairs(s)do if typeof(m)=="Instance"and m:IsA("UIStroke")then local v=a:Create(m,f,{Transparency=o})table.insert(p,v)end end end;for k,m in ipairs(r:GetChildren())do q(m)end end;q(i)for k,w in ipairs(p)do w:Play()end end;local function x(i)local p={}local function q(r)local s=g[r]if s then local t={}for y,z in pairs(s)do if typeof(y)=="string"then t[y]=z end end;table.insert(p,a:Create(r,f,t))for m,z in pairs(s)do if typeof(m)=="Instance"and m:IsA("UIStroke")then local v=a:Create(m,f,{Transparency=z})table.insert(p,v)end end end;for k,m in ipairs(r:GetChildren())do q(m)end end;q(i)for k,w in ipairs(p)do w:Play()end end;local function A(B,C)C.Visible=true;n(B,1)n(C,1)wait(0.05)x(C)wait(f.Time)B.Visible=false end;h(b)h(c)d.MouseButton1Click:Connect(function()A(b,c)for D,E in ipairs(script.Parent.Items:GetChildren())do E.Visible=false end end)e.MouseButton1Click:Connect(function()A(c,b)end)
 end;
 task.spawn(C_2);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Holder.Dragify
 local function C_4()
-local script = Interface["4"];
+	local script = Interface["4"];
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end;
 task.spawn(C_4);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Holder.TitleHolder.OptionsHolder.CloseButton.LocalScript
 local function C_b()
-local script = Interface["b"];
+	local script = Interface["b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
@@ -1076,7 +1076,7 @@ end;
 task.spawn(C_b);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Holder.TabButtons.LocalScript
 local function C_12()
-local script = Interface["12"];
+	local script = Interface["12"];
 	local a = game:GetService("TweenService")
 	local b = script.Parent
 	local c = b.Parent
@@ -1142,25 +1142,25 @@ local script = Interface["12"];
 			end
 		)
 	end
-	
+
 end;
 task.spawn(C_12);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Holder.TabButtons.LocalScript
 local function C_13()
-local script = Interface["13"];
-	
+	local script = Interface["13"];
+
 end;
 task.spawn(C_13);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Minimized.Dragify
 local function C_16()
-local script = Interface["16"];
+	local script = Interface["16"];
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end;
 task.spawn(C_16);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Minimized.CloseButton.LocalScript
 local function C_1d()
-local script = Interface["1d"];
+	local script = Interface["1d"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
@@ -1168,18 +1168,18 @@ end;
 task.spawn(C_1d);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Items.TemplateItems.Dragify
 local function C_55()
-local script = Interface["55"];
+	local script = Interface["55"];
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end;
 task.spawn(C_55);
 -- StarterGui.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.Items.TemplateItems.LocalScript
 local function C_56()
-local script = Interface["56"];
+	local script = Interface["56"];
 	-- References
 	local searchBox = script.Parent:FindFirstChildWhichIsA("TextBox")
 	local buttonsFrame = script.Parent:FindFirstChildWhichIsA("ScrollingFrame")
-	
+
 	-- Gather all TextButtons inside ButtonsFrame
 	local buttons = {}
 	for _, child in ipairs(buttonsFrame:GetChildren()) do
@@ -1187,7 +1187,7 @@ local script = Interface["56"];
 			table.insert(buttons, child)
 		end
 	end
-	
+
 	-- Function to update button visibility based on search
 	local function filterButtons(query)
 		local lowerQuery = query:lower() -- make search case-insensitive
@@ -1200,12 +1200,12 @@ local script = Interface["56"];
 			end
 		end
 	end
-	
+
 	-- Connect searchBox text change
 	searchBox:GetPropertyChangedSignal("Text"):Connect(function()
 		filterButtons(searchBox.Text)
 	end)
-	
+
 	-- Optional: reset all buttons when searchBox is cleared
 	searchBox.FocusLost:Connect(function(enterPressed)
 		if searchBox.Text == "" then
@@ -1214,7 +1214,7 @@ local script = Interface["56"];
 			end
 		end
 	end)
-	
+
 end;
 task.spawn(C_56);
 local GUI = Interface["1"]
