@@ -6,7 +6,7 @@
 ██║░╚═╝░██║██║╚█████╔╝██║░░██║╚█████╔╝
 ╚═╝░░░░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝░╚════╝░
 
-https://discadia.com/Micro-
+https://discadia.com/MicroProducts
 ]]
 
 -- Instances: 96 | Scripts: 9 | Modules: 0 | Tags: 0
