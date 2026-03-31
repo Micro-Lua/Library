@@ -6,7 +6,7 @@
 ██║░╚═╝░██║██║╚█████╔╝██║░░██║╚█████╔╝
 ╚═╝░░░░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝░╚════╝░
 
-https://discadia.com/MicroProducts
+https://discord.com/invite/D44pabV2qH
 ]]
 
 -- Instances: 96 | Scripts: 9 | Modules: 0 | Tags: 0
